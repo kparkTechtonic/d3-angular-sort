@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
   generateData() {
     this.chartData = [];
-    for (let i = 0; i < (8 + Math.floor(Math.random() * 100)); i++) {
+    for (let i = 0; i < (8 + Math.floor(Math.random() * 1000)); i++) {
       this.chartData.push([
         `Index ${i}`,
         Math.floor(Math.random() * 100)
@@ -35,7 +35,9 @@ export class AppComponent implements OnInit {
     }
   }
 
-  
+  resetChart(){
+    this.generateData()
+  }
 
 
 

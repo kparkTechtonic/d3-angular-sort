@@ -1,6 +1,8 @@
 <p>{{currentState}}! press on the "click me" button</p>
 <div class="d3-chart" #chart></div>
 <button (click)="onClickMe()">click me</button>
+<button *ngIf="!pressPlay" (click)="onClickMeFast()">Press play!</button>
+<button *ngIf="pressPlay" (click)="onClickMeFast()">Stop!</button>
 <hr>
 <span>
 <button (click)="onClickChangeState('Bubble sort')">Switch to Bubble sort!</button>
