@@ -1,0 +1,9 @@
+<p>{{currentState}}! press on the "click me" button</p>
+<div class="d3-chart" #chart></div>
+<button (click)="onClickMe()">click me</button>
+<hr>
+<span>
+<button (click)="onClickChangeState('Bubble sort')">Switch to Bubble sort!</button>
+<button (click)="onClickChangeState('Selection sort')">Switch to Selection sort!</button>
+<button (click)="onClickChangeState('Insertion sort')">Switch to Insertion sort</button>
+</span>
